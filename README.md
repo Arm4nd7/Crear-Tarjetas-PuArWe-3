@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivo
 
-Usa JavaScript para crear tarjetas dinámicamente con base en datos ingresados por el usuario.
+Usa JavaScript para crear tarjetas dinámicamente que se almacenen en un arreglo los registros.
 
 ## 📌 Requisitos
 
