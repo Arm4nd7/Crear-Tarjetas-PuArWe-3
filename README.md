@@ -18,6 +18,6 @@ Usa JavaScript para crear tarjetas dinámicamente con base en datos ingresados p
 - `createElement`
 - `appendChild`
 - `addEventListener`
-- `remove`
+- `removeChild`
 
 ✅ Este proyecto será validado automáticamente por GitHub Actions.
