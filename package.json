@@ -1,7 +1,7 @@
 {
   "homepage": "",
   "scripts": {
-    "deploy": "gh-gapes -d src"
+    "deploy": "gh-pages -d src"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
