@@ -9,14 +9,16 @@ h1{
 }
 
 div{
-    background-color: aqua;
     border: 4px solid;
-    text-align: center;
     margin: 2% 15%;
 }
 
+#tarjetas{
+    text-align: center;
+    background-color: aqua;
+}
+
 #div-buttons{
-    background-color: blueviolet;
     border: 4px solid;
     margin: 2%;
     position: fixed;
