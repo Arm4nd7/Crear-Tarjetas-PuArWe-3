@@ -1,5 +1,5 @@
+document.getElementById("tarjetas") 
 let createButton = document.querySelector("button");
-let cards = document.getElementById("tarjetas") 
 
 let createCards = [];
 let createDescription = [];
@@ -10,7 +10,7 @@ function newCards(){
     let newCard = document.createElement("div");
     newCard.classList.add("card-div");
     createCards.push(newCard);
-    cards.appendChild(newCard);
+    document.getElementById("tarjetas").appendChild(newCard);
     titleH3(newCard);
     descriptionP(newCard);
     buttonDiv(newCard);
