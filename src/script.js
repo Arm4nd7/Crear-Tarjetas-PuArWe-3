@@ -1,5 +1,4 @@
-let createButton = document.getElementById("createBtn");
-let removeButton = document.getElementById("removeBtn");
+let createButton = document.querySelector("button");
 
 let createCards = [];
 let createDescription = [];
