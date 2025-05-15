@@ -10,7 +10,7 @@ function newCards(){
     let newCard = document.createElement("div");
     newCard.classList.add("card-div");
     createCards.push(newCard);
-    document.getElementById("cards").appendChild(newCard);
+    document.getElementById("tarjetas").appendChild(newCard);
     titleH3(newCard);
     descriptionP(newCard);
     buttonDiv(newCard);
