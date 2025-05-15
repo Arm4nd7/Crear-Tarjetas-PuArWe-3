@@ -36,6 +36,7 @@ function buttonDiv(element) {
     newButtonDiv.textContent = "Eliminar";
     createDescription.push(newButtonDiv);
     element.appendChild(newButtonDiv);
+    
     newButtonDiv.addEventListener("click", () =>{
     if(createDescription.length >0 ){
         let removeBtn = createCards.pop();
