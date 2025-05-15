@@ -1,4 +1,4 @@
-document.getElementById("tarjetas") 
+document.getElementById("tarjetas");
 let createButton = document.querySelector("button");
 
 let createCards = [];
@@ -20,14 +20,14 @@ function titleH3(element){
     let newTitle = document.createElement("h3");
     newTitle.textContent = "Titulo h3";
     createDescription.push(newTitle);
-    element.appendChild(newTitle)
+    element.appendChild(newTitle);
 }
 // ceracion de parrafo
 function descriptionP(element){
     let newP = document.createElement("p");
     newP.textContent = "Nueva descripcion para esta tarjeta";
     createDescription.push(newP);
-    element.appendChild(newP)
+    element.appendChild(newP);
 }
 
 function buttonDiv(element) {
