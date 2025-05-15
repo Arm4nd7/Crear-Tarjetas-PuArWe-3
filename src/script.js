@@ -1,4 +1,5 @@
 let createButton = document.querySelector("button");
+let description = document.getElementById("description");
 
 let createCards = [];
 let createDescription = [];
@@ -9,9 +10,8 @@ function newCards(){
     let newCard = document.createElement("div");
     newCard.classList.add("card-div");
     createCards.push(newCard);
-
+    description.remove();
     document.getElementById("tarjetas").appendChild(newCard);
-
     titleH3(newCard);
     descriptionP(newCard);
     buttonDiv(newCard);
@@ -36,7 +36,7 @@ function buttonDiv(element) {
     newButtonDiv.textContent = "Eliminar";
     createDescription.push(newButtonDiv);
     element.appendChild(newButtonDiv);
-    
+
     newButtonDiv.addEventListener("click", () =>{
     if(createDescription.length >0 ){
         let removeBtn = createCards.pop();
