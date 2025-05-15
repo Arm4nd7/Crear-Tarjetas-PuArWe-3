@@ -36,11 +36,13 @@ function buttonDiv(element) {
     createDescription.push(newButtonDiv);
     element.appendChild(newButtonDiv);
     newButtonDiv.addEventListener("click", () =>{
-    if(createCards.length >0 ){
+    if(createDescription.length >0 ){
         let removeBtn = createCards.pop();
-        document.querySelector("div").removeChild(removeBtn);
+        removeBtn.remove();
     }
     });
 }
+
+
 
 
