@@ -1,25 +1,22 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/pTg7Pow3)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19523553&assignment_repo_type=AssignmentRepo)
-# 🧩 Desafío: Generador de Tarjetas Interactivas
+# 🧩 Generador de Tarjetas Interactivas
 
-## 🎯 Objetivo
+##  Que hace❓
 
-Usa JavaScript para crear tarjetas dinámicamente que se almacenen en un arreglo los registros.
+Se usa JavaScript para crear tarjetas dinámicamente que se almacenen en un arreglo los registros.
 
-## 📌 Requisitos
+## 📌 Herramientas
+✔️ `HTML 5` para dar estructura a la página.<br>
+✔️ `CSS` para dar estilo a la página y los componentes.<br>
+✔️ `JS` para dar dinamismo e interactividad a la página.<br>
 
-- Al hacer clic en el botón, crea una tarjeta dentro del div `#tarjetas`.
-- Cada tarjeta debe mostrar:
-  - Un nombre (`<h3>`)
-  - Una descripción (`<p>`)
-  - Un botón “Eliminar” que borre la tarjeta.
-
-## 🛠️ Métodos que debes usar
-
-- `getElementById`
-- `createElement`
-- `appendChild`
-- `addEventListener`
-- `removeChild`
-
-✅ Este proyecto será validado automáticamente por GitHub Actions.
+## 🏗️ Estrucutra
+```
+Generador-Tarjeta/
+├── src/
+│   ├── index.html          # Estructura de página
+│   ├── styles.css          # Estilos y diseño
+│   └── script.js           # Dinamismo y lógica.
+├── package-lock.json
+├── package.json
+└── README.md               # Documentacion
+```
