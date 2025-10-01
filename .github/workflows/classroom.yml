@@ -1,0 +1,30 @@
+name: Validación automática - Generador de Tarjetas DOM
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  dom-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Validar existencia de archivos base
+        run: |
+          test -f ./src/index.html || (echo "::error file=src/index.html::Falta index.html" && exit 1)
+          test -f ./src/script.js || (echo "::error file=src/script.js::Falta script.js" && exit 1)
+
+      - name: Validar uso de manipulación del DOM
+        run: |
+          grep -q "createElement" ./src/script.js || (echo "::error file=src/script.js::Falta uso de createElement" && exit 1)
+          grep -q "appendChild" ./src/script.js || (echo "::error file=src/script.js::Falta uso de appendChild" && exit 1)
+          grep -q "addEventListener" ./src/script.js || (echo "::error file=src/script.js::Falta uso de addEventListener" && exit 1)
+          grep -q "remove()" ./src/script.js || (echo "::error file=src/script.js::Falta uso de remove()" && exit 1)
+
+      - name: Validar modificación del contenedor tarjetas
+        run: |
+          grep -q "getElementById\(['\"]tarjetas['\"]\)" ./src/script.js || (echo "::error file=src/script.js::Debe modificar el contenedor #tarjetas" && exit 1)

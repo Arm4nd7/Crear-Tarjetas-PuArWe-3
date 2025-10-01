@@ -1,0 +1,66 @@
+body{
+    background-color: #d2a09f86;
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    background-color: #612c34de;
+}
+
+h1{
+    color: #cbdec2;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+h3, p{
+    color:#5d272f ;
+}
+
+#tarjetas{
+    margin: 2% 20%;
+    text-align: center;
+    background-color: #cbdec2;
+    padding: 2rem;
+}
+
+#createBtn{
+    margin: 0 2%;
+    position: fixed;
+    float: left;
+    top: 15%;
+    width: 10%;
+    height: 10%;
+    font-size: 20px;
+}
+
+button{
+    padding: 1rem;
+    background-color: #8b4748;
+    color: #9bc981;
+    border-radius: 0.3rem;
+    font-size: 15px;
+}
+
+.card-div{
+    background-color: #9bc981;
+    border-radius: 0.5rem;
+    margin: 3% 5%;
+}
+
+@media(width < 768px){
+
+    #createBtn{
+        position: static;
+        padding: auto;
+        width: auto;
+    }
+
+    #tarjetas{
+        margin:  0;
+    }
+
+
+}
